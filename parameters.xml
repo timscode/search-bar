@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+  <type>mysql</type>
+  <host>localhost</host>
+  <port>3306</port>
+  <database_name>test_project</database_name>
+  <charset>utf8</charset>
+  <login></login>
+  <password></password>
+  <sql>
+    <table_name>user</table_name>  
+    <column_name>Name</column_name>
+  </sql>
+</database>

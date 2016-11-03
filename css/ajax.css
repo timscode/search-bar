@@ -1,0 +1,48 @@
+ *{margin:0;padding:0;}
+
+form#ajaxSearchBar{
+    position:relative;
+    display: inline;
+}
+input[name="searchBar"]{
+    height:20px;
+    text-overflow: ellipsis;
+}
+div#searchBarResponse{
+    position:absolute;
+    top:21px;
+    overflow-y: auto;
+    height:100px;
+    width:171px;
+    border:1px solid grey;
+    border-top:none;
+    display: none;
+}
+div#searchBarResponse button{
+    text-align: left;
+    display: block;
+    background:none;
+    border:0;
+    width:100%;
+    cursor:pointer;
+    margin:5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height:15px;
+}
+div#finish{
+    position: absolute; left:35%;top:20%;
+}
+
+/* events */
+input[name="searchBar"]:focus{outline: none;}
+div#searchBarResponse button:hover{background:lightgrey;}
+div#searchBarResponse button:focus{background: lightgrey;outline: none;}
+button[name="searchBarButton"]{
+    position: absolute;
+    top:0;
+    left:173px;
+    height: 20px;
+}
+button[name="searchBarButton"]:focus{outline:none;}
+button[name="searchBarButton"]:hover{cursor:pointer;}
